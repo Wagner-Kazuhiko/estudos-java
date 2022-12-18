@@ -35,5 +35,7 @@ public class Program {
         else if (areaY > areaX) {
             System.out.println("Larger area: Y");
         }
+
+        scan.close();
     }
 }
