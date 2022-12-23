@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/course/course.iml" filepath="$PROJECT_DIR$/course/course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/curso-java-nelio/curso-java-nelio.iml" filepath="$PROJECT_DIR$/curso-java-nelio/curso-java-nelio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicioPOO/exercicioPOO.iml" filepath="$PROJECT_DIR$/exercicioPOO/exercicioPOO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/nelio-poo-organizado-intellij.iml" filepath="$PROJECT_DIR$/.idea/nelio-poo-organizado-intellij.iml" />
+    </modules>
+  </component>
+</project>
