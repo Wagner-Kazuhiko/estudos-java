@@ -1,4 +1,4 @@
-package entities;
+package com.poo.classes.entities;
 
 public class Triangle {
 
