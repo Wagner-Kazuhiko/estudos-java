@@ -14,4 +14,9 @@ public class Employee {
     public void increaseSalary(double percentage){
         grossSalary +=  (grossSalary * percentage) / 100 ;
     }
+
+    @Override
+    public String toString() {
+        return "Updated data: " + name + ", $ " + netSalary();
+    }
 }

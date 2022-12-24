@@ -20,6 +20,6 @@ public class Program {
         System.out.println("Which percentage to increase salary? ");
         employee.percentage = scan.nextDouble();
         employee.increaseSalary(employee.percentage);
-        System.out.println("Updated data: " + employee.name + ", $" + employee.netSalary());
+        System.out.println(employee);
     }
 }
