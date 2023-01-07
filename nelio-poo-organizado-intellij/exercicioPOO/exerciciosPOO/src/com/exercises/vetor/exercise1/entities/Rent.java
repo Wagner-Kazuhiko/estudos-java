@@ -4,6 +4,7 @@ public class Rent {
 
     private String name;
     private String email;
+    private String street;
 
     public Rent(String name, String email) {
         this.name = name;
