@@ -43,6 +43,6 @@ public class Account {
 
     @Override
     public java.lang.String toString() {
-        return super.toString();
+        return "id: " + id + ", Name: " + name + ", salary: " + salary;
     }
 }
