@@ -1,12 +1,20 @@
 package com.poo.heranca.application;
 
+import com.poo.heranca.entities.Account;
 import com.poo.heranca.entities.BusinessAccount;
+import com.poo.heranca.entities.SavingsAccount;
 
 public class Program {
     public static void main(String[] args) {
 
-        BusinessAccount account = new BusinessAccount();
+        Account acc = new Account(1001, "Alex", 0.0);
+        BusinessAccount bacc = new BusinessAccount(1022, "Maria", 0.0, 500.0);
 
-        account.getBalance();
+        //UPCASTING
+
+        Account acc1 = bacc;
+        Account acc2 = new BusinessAccount(1003, "Bob", 0.0, 200.0);
+        Account acc3 = new SavingsAccount(1004, "Anna", 0.0, 0.01);
+        
     }
 }
