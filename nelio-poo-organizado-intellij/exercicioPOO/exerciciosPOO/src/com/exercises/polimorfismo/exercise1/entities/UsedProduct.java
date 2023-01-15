@@ -1,8 +1,11 @@
 package com.exercises.polimorfismo.exercise1.entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class UsedProduct extends Product{
+
+    private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     protected Date manufactureDate;
 
@@ -22,8 +25,14 @@ public class UsedProduct extends Product{
     public void setManufactureDate(Date manufactureDate) {
         this.manufactureDate = manufactureDate;
     }
-
-    public String priceTag(){
-        return "Name: " + name + " $ " + price;
+    @Override
+    public String priceTag() {
+        return getName()
+                + " (used) $ "
+                + String.format("%.2f", getPrice())
+                + " (Manufacture date: "
+                + sdf.format(manufactureDate)
+                + ")";
     }
+
 }
