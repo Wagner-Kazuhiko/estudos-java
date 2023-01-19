@@ -10,17 +10,16 @@ public class SpecialAccount extends Account{
         super(id, name, balance);
     }
 
-    public double specialCredit (){
-        return deposit() + 500;
-    }
-
     @Override
     public double deposit (){
-        return balance += balance;
+       return balance += balance;
     }
     @Override
     public double withdraw(){
         return balance -= balance + balance;
+    }
+    public double specialCredit (){
+       return balance +=  500;
     }
 
     @Override

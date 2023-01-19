@@ -17,8 +17,8 @@ public class Program {
         List<Account> list = new ArrayList<>();
 
         System.out.print("How many account numbers to create: ");
-        double n = scan.nextDouble();
-        Double balance = 0.0;
+        int n = scan.nextInt();
+        Double balance;
 
         for (int i = 1; i <= n; i++){
             System.out.println("Account #" + i + " data: ");
@@ -30,17 +30,19 @@ public class Program {
             scan.nextLine();
             String name = scan.nextLine();
             if (typeAccount == 'd'){
+                System.out.print("Value for initial deposit: ");
+                balance = scan.nextDouble();
                 list.add(new Account(id, name, balance));
             }
             else if (typeAccount == 's') {
+                System.out.print("Value for initial deposit: ");
+                balance = scan.nextDouble();
                 list.add(new SpecialAccount(id, name, balance));
             }
         }
 
         System.out.println();
-        for (Account account : list){
-            System.out.println(list);
-        }
+        System.out.println(list);
 
         scan.close();
     }
