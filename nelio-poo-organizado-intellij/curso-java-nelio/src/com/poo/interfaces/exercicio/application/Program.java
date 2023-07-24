@@ -3,6 +3,7 @@ package com.poo.interfaces.exercicio.application;
 import com.poo.interfaces.exercicio.model.entities.Contract;
 import com.poo.interfaces.exercicio.model.entities.Installment;
 import com.poo.interfaces.exercicio.model.services.ContractService;
+import com.poo.interfaces.exercicio.model.services.PaypalService;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -30,7 +31,7 @@ public class Program {
         System.out.print("Entre com o número de parcelas: ");
         int n = scan.nextInt();
 
-        ContractService contractService = new ContractService(null);
+        ContractService contractService = new ContractService(new PaypalService());
 
         contractService.processContract(contract, n);
 
